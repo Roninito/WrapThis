@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		302E2A621DC7F2C80053C83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302E2A611DC7F2C80053C83F /* Assets.xcassets */; };
 		302E2A651DC7F2C80053C83F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E2A631DC7F2C80053C83F /* MainMenu.xib */; };
 		302E2A701DC7F2C90053C83F /* WrapWithFuncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E2A6F1DC7F2C90053C83F /* WrapWithFuncTests.swift */; };
+		302E2A811DC7F30C0053C83F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302E2A801DC7F30C0053C83F /* Cocoa.framework */; };
+		302E2A861DC7F30C0053C83F /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E2A851DC7F30C0053C83F /* SourceEditorExtension.swift */; };
+		302E2A881DC7F30C0053C83F /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E2A871DC7F30C0053C83F /* SourceEditorCommand.swift */; };
+		302E2A8C1DC7F30C0053C83F /* WrapInFunction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 302E2A7E1DC7F30B0053C83F /* WrapInFunction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,17 +25,45 @@
 			remoteGlobalIDString = 302E2A5B1DC7F2C80053C83F;
 			remoteInfo = WrapWithFunc;
 		};
+		302E2A8A1DC7F30C0053C83F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302E2A541DC7F2C80053C83F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 302E2A7D1DC7F30B0053C83F;
+			remoteInfo = WrapInFunction;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		302E2A901DC7F30C0053C83F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				302E2A8C1DC7F30C0053C83F /* WrapInFunction.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		302E2A5C1DC7F2C80053C83F /* WrapWithFunc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WrapWithFunc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		300615041DC883F600E3EB53 /* WrapThis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WrapThis.entitlements; sourceTree = "<group>"; };
+		302E2A5C1DC7F2C80053C83F /* WrapThis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WrapThis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		302E2A5F1DC7F2C80053C83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		302E2A611DC7F2C80053C83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		302E2A641DC7F2C80053C83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		302E2A661DC7F2C80053C83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302E2A6B1DC7F2C80053C83F /* WrapWithFuncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapWithFuncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		302E2A6B1DC7F2C80053C83F /* WrapThisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapThisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		302E2A6F1DC7F2C90053C83F /* WrapWithFuncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapWithFuncTests.swift; sourceTree = "<group>"; };
 		302E2A711DC7F2C90053C83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302E2A7E1DC7F30B0053C83F /* WrapInFunction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WrapInFunction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		302E2A801DC7F30C0053C83F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		302E2A841DC7F30C0053C83F /* WrapInFunction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WrapInFunction.entitlements; sourceTree = "<group>"; };
+		302E2A851DC7F30C0053C83F /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		302E2A871DC7F30C0053C83F /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		302E2A891DC7F30C0053C83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,14 +81,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		302E2A7B1DC7F30B0053C83F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302E2A811DC7F30C0053C83F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		302E2A531DC7F2C80053C83F = {
 			isa = PBXGroup;
 			children = (
+				300615041DC883F600E3EB53 /* WrapThis.entitlements */,
 				302E2A5E1DC7F2C80053C83F /* WrapWithFunc */,
 				302E2A6E1DC7F2C80053C83F /* WrapWithFuncTests */,
+				302E2A821DC7F30C0053C83F /* WrapInFunction */,
+				302E2A7F1DC7F30C0053C83F /* Frameworks */,
 				302E2A5D1DC7F2C80053C83F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,8 +107,9 @@
 		302E2A5D1DC7F2C80053C83F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				302E2A5C1DC7F2C80053C83F /* WrapWithFunc.app */,
-				302E2A6B1DC7F2C80053C83F /* WrapWithFuncTests.xctest */,
+				302E2A5C1DC7F2C80053C83F /* WrapThis.app */,
+				302E2A6B1DC7F2C80053C83F /* WrapThisTests.xctest */,
+				302E2A7E1DC7F30B0053C83F /* WrapInFunction.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,29 +134,58 @@
 			path = WrapWithFuncTests;
 			sourceTree = "<group>";
 		};
+		302E2A7F1DC7F30C0053C83F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				302E2A801DC7F30C0053C83F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		302E2A821DC7F30C0053C83F /* WrapInFunction */ = {
+			isa = PBXGroup;
+			children = (
+				302E2A851DC7F30C0053C83F /* SourceEditorExtension.swift */,
+				302E2A871DC7F30C0053C83F /* SourceEditorCommand.swift */,
+				302E2A891DC7F30C0053C83F /* Info.plist */,
+				302E2A831DC7F30C0053C83F /* Supporting Files */,
+			);
+			path = WrapInFunction;
+			sourceTree = "<group>";
+		};
+		302E2A831DC7F30C0053C83F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				302E2A841DC7F30C0053C83F /* WrapInFunction.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		302E2A5B1DC7F2C80053C83F /* WrapWithFunc */ = {
+		302E2A5B1DC7F2C80053C83F /* WrapThis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 302E2A741DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapWithFunc" */;
+			buildConfigurationList = 302E2A741DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapThis" */;
 			buildPhases = (
 				302E2A581DC7F2C80053C83F /* Sources */,
 				302E2A591DC7F2C80053C83F /* Frameworks */,
 				302E2A5A1DC7F2C80053C83F /* Resources */,
+				302E2A901DC7F30C0053C83F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				302E2A8B1DC7F30C0053C83F /* PBXTargetDependency */,
 			);
-			name = WrapWithFunc;
+			name = WrapThis;
 			productName = WrapWithFunc;
-			productReference = 302E2A5C1DC7F2C80053C83F /* WrapWithFunc.app */;
+			productReference = 302E2A5C1DC7F2C80053C83F /* WrapThis.app */;
 			productType = "com.apple.product-type.application";
 		};
-		302E2A6A1DC7F2C80053C83F /* WrapWithFuncTests */ = {
+		302E2A6A1DC7F2C80053C83F /* WrapThisTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 302E2A771DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapWithFuncTests" */;
+			buildConfigurationList = 302E2A771DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapThisTests" */;
 			buildPhases = (
 				302E2A671DC7F2C80053C83F /* Sources */,
 				302E2A681DC7F2C80053C83F /* Frameworks */,
@@ -123,10 +196,27 @@
 			dependencies = (
 				302E2A6D1DC7F2C80053C83F /* PBXTargetDependency */,
 			);
-			name = WrapWithFuncTests;
+			name = WrapThisTests;
 			productName = WrapWithFuncTests;
-			productReference = 302E2A6B1DC7F2C80053C83F /* WrapWithFuncTests.xctest */;
+			productReference = 302E2A6B1DC7F2C80053C83F /* WrapThisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		302E2A7D1DC7F30B0053C83F /* WrapInFunction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302E2A8D1DC7F30C0053C83F /* Build configuration list for PBXNativeTarget "WrapInFunction" */;
+			buildPhases = (
+				302E2A7A1DC7F30B0053C83F /* Sources */,
+				302E2A7B1DC7F30B0053C83F /* Frameworks */,
+				302E2A7C1DC7F30B0053C83F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WrapInFunction;
+			productName = WrapInFunction;
+			productReference = 302E2A7E1DC7F30B0053C83F /* WrapInFunction.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -140,19 +230,26 @@
 				TargetAttributes = {
 					302E2A5B1DC7F2C80053C83F = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 636B6P25FB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					302E2A6A1DC7F2C80053C83F = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 636B6P25FB;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 302E2A5B1DC7F2C80053C83F;
 					};
+					302E2A7D1DC7F30B0053C83F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = 302E2A571DC7F2C80053C83F /* Build configuration list for PBXProject "WrapWithFunc" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 302E2A571DC7F2C80053C83F /* Build configuration list for PBXProject "WrapThis" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -164,8 +261,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				302E2A5B1DC7F2C80053C83F /* WrapWithFunc */,
-				302E2A6A1DC7F2C80053C83F /* WrapWithFuncTests */,
+				302E2A5B1DC7F2C80053C83F /* WrapThis */,
+				302E2A6A1DC7F2C80053C83F /* WrapThisTests */,
+				302E2A7D1DC7F30B0053C83F /* WrapInFunction */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +279,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		302E2A691DC7F2C80053C83F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302E2A7C1DC7F30B0053C83F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,13 +311,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		302E2A7A1DC7F30B0053C83F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302E2A861DC7F30C0053C83F /* SourceEditorExtension.swift in Sources */,
+				302E2A881DC7F30C0053C83F /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		302E2A6D1DC7F2C80053C83F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 302E2A5B1DC7F2C80053C83F /* WrapWithFunc */;
+			target = 302E2A5B1DC7F2C80053C83F /* WrapThis */;
 			targetProxy = 302E2A6C1DC7F2C80053C83F /* PBXContainerItemProxy */;
+		};
+		302E2A8B1DC7F30C0053C83F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 302E2A7D1DC7F30B0053C83F /* WrapInFunction */;
+			targetProxy = 302E2A8A1DC7F30C0053C83F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,28 +440,34 @@
 		302E2A751DC7F2C90053C83F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WrapThis.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 636B6P25FB;
 				INFOPLIST_FILE = WrapWithFunc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapWithFunc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		302E2A761DC7F2C90053C83F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WrapThis.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 636B6P25FB;
 				INFOPLIST_FILE = WrapWithFunc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapWithFunc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapThis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -358,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapWithFuncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WrapWithFunc.app/Contents/MacOS/WrapWithFunc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WrapThis.app/Contents/MacOS/WrapThis";
 			};
 			name = Debug;
 		};
@@ -374,14 +499,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapWithFuncTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WrapWithFunc.app/Contents/MacOS/WrapWithFunc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WrapThis.app/Contents/MacOS/WrapThis";
+			};
+			name = Release;
+		};
+		302E2A8E1DC7F30C0053C83F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WrapInFunction/WrapInFunction.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 636B6P25FB;
+				INFOPLIST_FILE = WrapInFunction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapThis.WrapInFunction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		302E2A8F1DC7F30C0053C83F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WrapInFunction/WrapInFunction.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 636B6P25FB;
+				INFOPLIST_FILE = WrapInFunction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leerie.WrapThis.WrapInFunction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		302E2A571DC7F2C80053C83F /* Build configuration list for PBXProject "WrapWithFunc" */ = {
+		302E2A571DC7F2C80053C83F /* Build configuration list for PBXProject "WrapThis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302E2A721DC7F2C90053C83F /* Debug */,
@@ -390,21 +549,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		302E2A741DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapWithFunc" */ = {
+		302E2A741DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapThis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302E2A751DC7F2C90053C83F /* Debug */,
 				302E2A761DC7F2C90053C83F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		302E2A771DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapWithFuncTests" */ = {
+		302E2A771DC7F2C90053C83F /* Build configuration list for PBXNativeTarget "WrapThisTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				302E2A781DC7F2C90053C83F /* Debug */,
 				302E2A791DC7F2C90053C83F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302E2A8D1DC7F30C0053C83F /* Build configuration list for PBXNativeTarget "WrapInFunction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302E2A8E1DC7F30C0053C83F /* Debug */,
+				302E2A8F1DC7F30C0053C83F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

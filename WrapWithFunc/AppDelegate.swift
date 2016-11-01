@@ -15,8 +15,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
-    }
+//        
+//func <#name#> (<#params#>) -> <#returnedType#> {
+//        var x = "SomeCode"
+//        let y = "OtherCode"
+//        x.append(y)
+}
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application

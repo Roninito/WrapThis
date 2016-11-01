@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WrapWithFunc.xcodeproj">
+      location = "self:/Users/ronin/Dropbox/Dev/WrapWithFunc/WrapThis.xcodeproj">
    </FileRef>
 </Workspace>

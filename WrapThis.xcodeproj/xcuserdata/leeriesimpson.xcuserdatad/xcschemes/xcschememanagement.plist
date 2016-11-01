@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>WrapInFunction.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WrapWithFunc.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>302E2A6A1DC7F2C80053C83F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>302E2A7D1DC7F30B0053C83F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
